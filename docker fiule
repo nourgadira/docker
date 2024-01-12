@@ -1,0 +1,8 @@
+
+FROM openjdk:11-jre-slim
+
+WORKDIR /app
+
+COPY webapp.war /app
+
+CMD ["java", "-jar", "webapp.war"]
